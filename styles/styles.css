@@ -1,3 +1,9 @@
+:root {
+    --border-style: 1px solid rgb(0, 0, 0);
+    --accent-color: darkblue;
+    --box-shadows: 0 0 30px gray;
+}
+
 main {
     max-width: 840px;
 }
@@ -5,13 +11,13 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid rgb(0, 0, 0);
+    border: var(--border-style);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadows);
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--accent-color);
     padding: 10px;
 }
 
@@ -22,7 +28,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--accent-color);
 }
 
 p {
@@ -42,9 +48,9 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-    border: 1px solid rgb(0, 0, 0);
+    border: var(--border-style);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadows);
 }
 
 footer {
