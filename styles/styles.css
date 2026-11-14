@@ -1,19 +1,31 @@
 :root {
     --border-style: 1px solid rgb(0, 0, 0);
     --accent-color: darkblue;
+    --accent-background-color: rgb(200, 200, 255);
     --box-shadows: 0 0 30px gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main {
     max-width: 840px;
 }
 
-main img {
-    width: 150px;
+img {
+    width: 200px;
     height: auto;
     border: var(--border-style);
     padding: 2px;
     box-shadow: var(--box-shadows);
+}
+
+main img {
+    width: 150px;
+    float: right;
 }
 
 nav {
@@ -31,26 +43,20 @@ h1 {
     color: var(--accent-color);
 }
 
+h2 {
+    position: absolute;
+    top: 30px;
+    left: 160px;
+}
+
 p {
     padding: 0;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-    border: var(--border-style);
-    padding: 2px;
-    box-shadow: var(--box-shadows);
+    position: relative;
 }
 
 footer {
@@ -58,4 +64,13 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: var(--accent-background-color);
 }
