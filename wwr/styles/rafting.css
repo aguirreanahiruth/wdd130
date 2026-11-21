@@ -1,7 +1,8 @@
 :root {
-    --primary-collor: rgb(29, 156, 247);
-    --accent1-color: rgb(1, 1, 68);
+    --primary-collor: rgb(7, 91, 151);
+    --accent1-color: rgb(4, 4, 61);
     --accent2-color: rgb(3, 86, 31);
+    --white-color: rgb(255 255 255);
     --heading-font: 'Arvo', Georgia, serif;
     --body-font: 'Lato', Arial, sans-serif;
 }
@@ -103,7 +104,7 @@ header nav ul {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .hero article {
@@ -114,13 +115,14 @@ header nav ul {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent2-color);
-    color: #fff;
+    color: var(--white-color);
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
 .hero article img {
+    float: right;
     width: 120px;
     height: auto;
     order: 2;
